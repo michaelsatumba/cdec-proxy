@@ -2,6 +2,10 @@
 const fetch = require('node-fetch').default;
 const cors = require('cors');
 
+app.get('/', (req, res) => {
+    res.send('CDEC Proxy Server is running. Access API at /api/cdec-data');
+});
+
 const allowCors = (fn) => async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500'); // Change this for production!
