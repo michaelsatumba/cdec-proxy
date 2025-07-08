@@ -12,9 +12,9 @@ app.use(cors({
     // origin: '*'
 }));
 
-app.get('/', (req, res) => {
-  res.send('Welcome to the CDEC Data Proxy! Access the API at /api/cdec-data');
-});
+// app.get('/', (req, res) => {
+//   res.send('Welcome to the CDEC Data Proxy! Access the API at /api/cdec-data');
+// });
 
 
 // A simple route for your proxy
