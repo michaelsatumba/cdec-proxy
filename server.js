@@ -36,7 +36,7 @@ app.get('/api/cdec-data', async (req, res) => {
             });
         }
 
-        // Get the data from CDEC API (assuming JSON)
+        // Get the data from CDEC API
         const data = await cdecResponse.json();
 
         // Send the data back to your frontend
