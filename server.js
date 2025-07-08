@@ -12,6 +12,10 @@ app.use(cors({
     // origin: '*'
 }));
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the CDEC Data Proxy! Access the API at /api/cdec-data');
+});
+
 
 // A simple route for your proxy
 // Example: frontend will call /api/cdec-data?Stations=CAS&SensorNums=23&dur_code=H&Start=2025-06-29&End=2025-06-30
