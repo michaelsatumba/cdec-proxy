@@ -6,7 +6,7 @@
   ],
   "functions": {
     "server.js": {
-      "runtime": "node@22.16" 
+      "runtime": "nodejs@22.16" 
     }
   }
 }
