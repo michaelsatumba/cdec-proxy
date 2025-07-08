@@ -8,13 +8,13 @@ const app = express();
 
 // Enable CORS for your frontend
 app.use(cors({
-    origin: 'http://127.0.0.1:5500'
-    // origin: '*'
+    // origin: 'http://127.0.0.1:5500'
+    origin: '*'
 }));
 
-// app.get('/', (req, res) => {
-//   res.send('Welcome to the CDEC Data Proxy! Access the API at /api/cdec-data');
-// });
+app.get('/', (req, res) => {
+  res.send('Welcome to the CDEC Data Proxy! Access the API at /api/cdec-data');
+});
 
 
 // A simple route for your proxy
